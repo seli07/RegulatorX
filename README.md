@@ -27,7 +27,7 @@ The platform maintains comprehensive audit trails documenting all changes, impro
 
 ### Next steps:
 1)	Implement end to end agentic verifications
-2)	Integrate auth0 to signin to various models apis securely.   Currently , I define .env variable
+2)	Integrate auth0 to signin to various models apis securely.   Currently , I define .env variable.   You need to define the api key first before executing the code (self.apiKey = os.environ["GEMINI_API_KEY"]) (export GEMINI_API_KEY="your-api-key-here") in your linux kernel first
 3)	Implement finetuning workflow for human in the loop learning for introducing subject matter expertise
 4)	Build UI for human input and interaction
 
