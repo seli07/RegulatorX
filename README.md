@@ -25,8 +25,19 @@ The platform maintains comprehensive audit trails documenting all changes, impro
 ## Architecture:
 ![image](https://github.com/user-attachments/assets/23cb6662-3cca-4cd9-b3c0-c12a1b5dd6de)
 
+## Step-by-step process to execute the code:
+1) clone the code using git clone to your computer (codespace has a streamlit bug that is causing interaction issues)
+2) create a env variable export GEMINI_API_KEY="your-api-key-here" for linux and set command respectively in windows
+3) execute the main.py
+4) wait till the process completes
+5) enter the name of companion guide that has changes (this will be automated using agentic checks in near future) we only worked on institutional claims but this grouping will have professional and dental as well
+   a) enter updated cg name (q for quit): enter 'instcg'
+    b) enter location of new doc: inst2.pdf (file with changes, its placed in root folder so just filename)  this will be automated with webagent to check for new cg in future.  this step is only for prototype phase
+   
+
+
 ### Next steps:
-1)	Implement end to end agentic verifications
+1)	Enhance end to end agentic verifications- from web to critic agentic workflow
 2)	Integrate auth0 to signin to various models apis securely.   Currently , I define .env variable.   You need to define the api key first before executing the code (self.apiKey = os.environ["GEMINI_API_KEY"]) (export GEMINI_API_KEY="your-api-key-here") in your linux kernel first
 3)	Implement finetuning workflow for human in the loop learning for introducing subject matter expertise
 4)	Build UI for human input and interaction
