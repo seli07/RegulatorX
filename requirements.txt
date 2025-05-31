@@ -1,0 +1,9 @@
+python-dotenv==1.0.1
+requests==2.32.3
+pandas
+google-genai==1.11.0
+markitdown==0.1.1
+chromadb==1.0.8
+tqdm
+pymupdf4llm
+docling
